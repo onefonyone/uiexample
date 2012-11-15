@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-   android:layout_width="fill_parent"
-   android:layout_height="fill_parent"
-   android:orientation="vertical" >
-	
-	<ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
-	    xmlns:tools="http://schemas.android.com/tools"
-	    android:id="@+id/button_one"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background1"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/uilayout">
+
+    <ImageButton
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/button_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:paddingTop="5dp"
+        android:src="@drawable/button1"
+        app:context=".UserInterface" />
+
+	<TextView
+	    android:id="@+id/textView1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:padding="12dip"
+	    android:text="sample text"
+	    android:textColor="#cccc77"
+	    android:textSize="40dip" />
+
+	<ImageButton
+	    android:id="@+id/imageButton1"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:background="#00000000"
-	    android:paddingTop="5dp"
-	    android:src="@drawable/button1"
-	    tools:context=".UserInterface" >
-	
-	</ImageButton>
+	    android:src="@drawable/image1" />
+
 </LinearLayout>
